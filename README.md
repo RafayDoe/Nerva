@@ -13,7 +13,7 @@ A simple landing page built with React.js that logs event.
 1. Go through the page, and return back to navbar.
 2. Return to the Navbar and click "Logs" button.
 3. You can see your logs now.
-4. To return you can press the "Return button.
+4. To return you can press the "Return" button.
 
 ## How to Install
 1. Clone this repository
