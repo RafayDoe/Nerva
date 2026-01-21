@@ -1,7 +1,7 @@
 import Button from "./Button";
 import folds from "../assets/folds.jfif";
 
-function Hero() {
+function Hero({ logger }) {
   return (
     <main
       style={{
@@ -12,6 +12,8 @@ function Hero() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
+      onMouseEnter={() => logger("Hover over main in Hero started")}
+      onMouseLeave={() => logger("Hover over main in Hero ended")}
     >
       <div
         style={{
@@ -40,7 +42,12 @@ function Hero() {
           The Best Web-App to learn Cryptography
         </p>
         <div style={{ marginLeft: "40px", marginTop: "20px" }}>
-          <Button color="black" bgColor="White" text="Learn More" />
+          <Button
+            color="black"
+            bgColor="White"
+            text="Learn More"
+            logger={logger}
+          />
         </div>
       </div>
     </main>

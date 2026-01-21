@@ -1,4 +1,4 @@
-function Pricing() {
+function Pricing({ logger }) {
   return (
     <section
       id="pricing"
@@ -8,6 +8,8 @@ function Pricing() {
       }}
     >
       <div
+        onMouseEnter={() => logger("Hover over div 1 in Pricing started")}
+        onMouseLeave={() => logger("Hover over div 1 in Pricing ended")}
         style={{
           maxWidth: "1000px",
           margin: "0 auto",
@@ -38,6 +40,8 @@ function Pricing() {
             gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
             gap: "40px",
           }}
+          onMouseEnter={() => logger("Hover over div 2 in Pricing started")}
+          onMouseLeave={() => logger("Hover over div 2 in Pricing ended")}
         >
           <div
             style={{
@@ -63,6 +67,8 @@ function Pricing() {
               borderRadius: "8px",
               backgroundColor: "white",
             }}
+            onMouseEnter={() => logger("Hover over div 3 in Pricing started")}
+            onMouseLeave={() => logger("Hover over div 3 in Pricing ended")}
           >
             <h3>Pro</h3>
             <p style={{ fontSize: "2rem", margin: "20px 0" }}>$9 / month</p>

@@ -1,4 +1,4 @@
-function Navbar() {
+function Navbar({ logCheck, logger }) {
   return (
     <nav
       style={{
@@ -15,6 +15,8 @@ function Navbar() {
       <ul
         style={{
           display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
           listStyle: "none",
           padding: "0px",
           gap: "1rem",
@@ -47,6 +49,23 @@ function Navbar() {
           >
             LinkedIn
           </a>
+        </li>
+        <li>
+          <button
+            style={{
+              color: "black",
+              backgroundColor: "White",
+              padding: "8px 16px",
+              borderRadius: "8px",
+              fontSize: "1rem",
+            }}
+            onClick={() => {
+              logCheck();
+              logger("Log Mounted");
+            }}
+          >
+            Logs
+          </button>
         </li>
       </ul>
     </nav>

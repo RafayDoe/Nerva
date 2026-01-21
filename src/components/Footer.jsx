@@ -1,4 +1,4 @@
-function Footer() {
+function Footer({ logger }) {
   return (
     <footer
       style={{
@@ -6,6 +6,8 @@ function Footer() {
         color: "#aaa",
         padding: "30px 40px",
       }}
+      onMouseEnter={() => logger("Hover over footer started")}
+      onMouseLeave={() => logger("Hover over footer ended")}
     >
       <div
         style={{

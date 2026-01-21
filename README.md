@@ -1,5 +1,5 @@
 # Nerva
-A simple landing page built with React.js.
+A simple landing page built with React.js that logs event.
 
 ## Features
 - Navbar
@@ -7,9 +7,16 @@ A simple landing page built with React.js.
 - FollowUp Section
 - Pricing Section
 - Footer
+- Logs
 
 ## How to Install
 1. Clone this repository
+
+## How to Use
+1. Go through the page, and return back to navbar.
+2. Return to the Navbar and click "Logs" button.
+3. You can see your logs now.
+4. To return you can press the "Return button.
 
 ```sh
 git clone https://github.com/RafayDoe/Nerva.git

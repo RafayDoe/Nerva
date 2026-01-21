@@ -5,15 +5,15 @@ import Features from "./Features";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
 
-function Landing() {
+function Landing({ logCheck, logger }) {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <FollowUp />
-      <Features />
-      <Pricing />
-      <Footer />
+      <Navbar logCheck={logCheck} logger={logger} />
+      <Hero logger={logger} />
+      <FollowUp logger={logger} />
+      <Features logger={logger} />
+      <Pricing logger={logger} />
+      <Footer logger={logger} />
     </>
   );
 }
